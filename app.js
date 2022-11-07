@@ -59,7 +59,7 @@ function findNeighborCount(grid, i, j) {
     S: grid[i + 1][j],
     SE: grid[i + 1][j + 1],
   }
-        
+     
   for (const coordinate in neighbors) {
     if (neighbors.hasOwnProperty(coordinate)) {
       // console.log(`coordinates ${coordinate} neighbor ${neighbors[coordinate]}`)
