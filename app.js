@@ -3,7 +3,7 @@
 // let gridmax;
 
 function initGrid() {
-  gridmax = 10;
+  gridmax = 5;
   grid = new Array(gridmax);
   for (let i = 0; i < gridmax; i++) {
     grid[i] = new Array(gridmax);
@@ -70,12 +70,32 @@ function findNeighborCount(grid, i, j) {
 }
 
 
-// You can use the Game of Life rules to determine if this cell should die based on the neightbor count
-function areYouAliveBitch(grid,findNeighborCount,initGrid) {
+let cell = iterateGrid()
 
-  if (aliveNeightborCount === 2 && cells ===  ) {
-    return 
+// You can use the Game of Life rules to determine if this cell should die based on the neighbor count
+
+function areYouAliveBitch(cell,neighborCount) {
+let newCell = 0
+for(let i = 0; i < cell.length; i++){
+  for(let j = 0; j < cell.length; j++ ){
+    const neighborCount = findNeighborCount()
+    let cell = cell[i][j]
+  if ( cell === 1 && neighborCount === 2 || neighborCount === 3  ) {
+    return newCell += 1
+  } 
+      if ( neighborCount >= 3 ) {
+       return newCell += 1
+         } 
+        if( cell === 1 ){
+          return newCell 
+           } 
+       }
+    } 
+    return newCell
   }
-}
 
-iterateGrid()
+//const newCells = areYouAliveBitch()
+//function nextLife(newCells){
+
+
+// }
