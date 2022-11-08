@@ -71,11 +71,11 @@ function findNeighborCount(grid, i, j) {
 
 
 // You can use the Game of Life rules to determine if this cell should die based on the neightbor count
-function areYouAliveBitch(findNeighborCount) {
+function areYouAliveBitch(grid,findNeighborCount,initGrid) {
 
-  if () {
-    
+  if (aliveNeightborCount === 2 && cells ===  ) {
+    return 
   }
 }
 
-// iterateGrid()
+iterateGrid()
