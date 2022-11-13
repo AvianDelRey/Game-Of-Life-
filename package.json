@@ -1,0 +1,20 @@
+{
+  "name": "game-of-life-",
+  "version": "1.0.0",
+  "description": "This is my first project! this will be all notes and ideas",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvianDelRey/Game-Of-Life-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvianDelRey/Game-Of-Life-/issues"
+  },
+  "homepage": "https://github.com/AvianDelRey/Game-Of-Life-#readme"
+}
