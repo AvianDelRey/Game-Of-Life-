@@ -2,6 +2,9 @@ let grid;
 let gridold;
 let gridmax;
 
+const canvas = document.getElementById("first block");
+const ctx = canvas.getContext("2d");
+
 function initGrid() {
   gridmax = 20;
   grid = new Array(gridmax);
@@ -113,7 +116,7 @@ function areYouAliveBitch(cell, neighborCount) {
         return updatedValueOfCell += 1;
       }
       // if cell is dead and neighbor count is 3 or more, cell return cell as 1
-      else if (cell === 0 || neighborCount >= 3) {
+      else if (cell === 0 || neighborCount >= 2) {
         return updatedValueOfCell += 1;
       }
       // if cell is dead already, cell returns dead in next life 
