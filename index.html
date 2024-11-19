@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Life</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+      display: block;
+      margin: auto;
+    }
+  </style>
 </head>
-    <body>
-        <title> Game Of Life </title>
-        <h1>The Game Of Life</h1>
-        <canvas id="first block" width="500" height="500"></canvas>
-        <style>
-            canvas {
-              border: 2px solid black;
-              
-            }
-          </style>
-    </body>
-    <script src="app.js"></script>
+<body>
+  <canvas id="first-block" width="800" height="700"></canvas>
+    <div id="Patterns">
+      <button id="explodeGame">Restart</button>
+      <button id="startGame">Start </button>
+      <button id="pauseGame">Pause </button>
+
+    </div>
+  <script src="app.js"></script>
+</body>
 </html>
